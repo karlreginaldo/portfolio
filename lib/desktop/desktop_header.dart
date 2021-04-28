@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/components/logo.dart';
-import 'package:portfolio/model/header.dart';
+import '../components/logo.dart';
+import '../model/header.dart';
 
 class DesktopHeader extends StatelessWidget {
   const DesktopHeader({

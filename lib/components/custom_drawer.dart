@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/model/header.dart';
+import '../model/header.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({

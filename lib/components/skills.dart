@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/model/skill.dart';
+import '../model/skill.dart';
 
 import 'custom_rich_text.dart';
 

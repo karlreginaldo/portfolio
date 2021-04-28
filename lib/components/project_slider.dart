@@ -3,8 +3,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/components/custom_rich_text.dart';
-import 'package:portfolio/model/project.dart';
+import 'custom_rich_text.dart';
+import '../model/project.dart';
 
 class ProjectSlider extends StatelessWidget {
   const ProjectSlider({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/model/project.dart';
+import '../model/project.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import 'custom_rich_text.dart';

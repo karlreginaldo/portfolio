@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:meta/meta.dart';
-import 'package:portfolio/components/custom_rich_text.dart';
-import 'package:portfolio/model/project.dart';
+import '../components/custom_rich_text.dart';
+import 'project.dart';
 
 class Header {
   final String title;

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/introduction.dart';
-import 'package:portfolio/components/project_slider.dart';
-import 'package:portfolio/components/project_wrap.dart';
-import 'package:portfolio/components/resources.dart';
-import 'package:portfolio/components/skills.dart';
+import '../components/introduction.dart';
+import '../components/project_wrap.dart';
+import '../components/resources.dart';
+import '../components/skills.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class TabletBody extends StatelessWidget {

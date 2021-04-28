@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/components/custom_rich_text.dart';
+import 'custom_rich_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class IntroRight extends StatelessWidget {

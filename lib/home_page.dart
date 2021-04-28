@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/tablet/tablet_body.dart';
-import 'package:portfolio/tablet/tablet_footer.dart';
-import 'package:portfolio/tablet/tablet_header.dart';
+import 'tablet/tablet_body.dart';
+import 'tablet/tablet_footer.dart';
+import 'tablet/tablet_header.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import 'components/custom_drawer.dart';
@@ -13,7 +12,6 @@ import 'desktop/desktop_header.dart';
 import 'mobile/mobile_body.dart';
 import 'mobile/mobile_footer.dart';
 import 'mobile/mobile_header.dart';
-import 'model/header.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
