@@ -17,6 +17,7 @@ class DesktopFooter extends StatelessWidget {
         children: [
           Text(
             'Copyright(©) 2021 Karl Jan S. Reginaldo. All rights Reserved',
+            style: TextStyle(fontSize: 12),
           ),
           Row(
             children: [
@@ -25,6 +26,7 @@ class DesktopFooter extends StatelessWidget {
                 child: GestureDetector(
                   child: Text(
                     'Privacy Policy',
+                    style: TextStyle(fontSize: 12),
                   ),
                 ),
               ),
@@ -36,6 +38,7 @@ class DesktopFooter extends StatelessWidget {
                 child: GestureDetector(
                   child: Text(
                     'Terms & Condition',
+                    style: TextStyle(fontSize: 12),
                   ),
                 ),
               )

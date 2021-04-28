@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/components/contacts.dart';
 import '../components/introduction.dart';
 import '../components/project_wrap.dart';
 import '../components/resources.dart';
@@ -57,6 +58,12 @@ class TabletBody extends StatelessWidget {
           ),
           Container(
             child: Resources(),
+          ),
+          SizedBox(
+            height: 100,
+          ),
+          Container(
+            child: Contacts(),
           )
         ],
       ),
