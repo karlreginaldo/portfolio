@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'tablet/tablet_body.dart';
-import 'tablet/tablet_footer.dart';
-import 'tablet/tablet_header.dart';
+import 'package:portfolio/tablet/tablet_body.dart';
+import 'package:portfolio/tablet/tablet_footer.dart';
+import 'package:portfolio/tablet/tablet_header.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
 import 'components/custom_drawer.dart';
 import 'desktop/desktop_body.dart';
 import 'desktop/desktop_footer.dart';
