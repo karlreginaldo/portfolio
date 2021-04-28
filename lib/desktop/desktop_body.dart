@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:portfolio/components/contacts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../components/introduction.dart';
@@ -61,6 +62,12 @@ class DesktopBody extends StatelessWidget {
           ),
           Container(
             child: Resources(),
+          ),
+          SizedBox(
+            height: 100,
+          ),
+          Container(
+            child: Contacts(),
           )
         ],
       ),
