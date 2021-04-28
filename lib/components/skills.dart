@@ -60,17 +60,15 @@ class SkillsRight extends StatelessWidget {
                             Expanded(
                               // remaining (blank part)
                               flex: 100 - skill.percentage,
-                              child: Divider(
-                                color: Colors.white,
-                              ),
+                              child: Divider(),
                             ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                            Text(
-                              "${skill.percentage}%",
-                              style: GoogleFonts.oswald(fontSize: 16),
-                            )
+                            // SizedBox(
+                            //   width: 10.0,
+                            // ),
+                            // Text(
+                            //   "${skill.percentage}%",
+                            //   style: GoogleFonts.oswald(fontSize: 16),
+                            // )
                           ],
                         ),
                       )
@@ -97,15 +95,13 @@ class SkillsRight extends StatelessWidget {
                             Expanded(
                               // remaining (blank part)
                               flex: 100 - skill.percentage,
-                              child: Divider(
-                                color: Colors.white,
-                              ),
+                              child: Divider(),
                             ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                            Text("${skill.percentage}%",
-                                style: GoogleFonts.oswald(fontSize: 16))
+                            // SizedBox(
+                            //   width: 10.0,
+                            // ),
+                            // Text("${skill.percentage}%",
+                            //     style: GoogleFonts.oswald(fontSize: 16))
                           ],
                         ),
                       ),
