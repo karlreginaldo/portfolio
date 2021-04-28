@@ -40,22 +40,29 @@ class CustomDrawer extends StatelessWidget {
                             ),
                           ),
                         )
-                      : ListTile(
-                          title: MouseRegion(
-                            cursor: SystemMouseCursors.click,
-                            child: GestureDetector(
-                              onTap: () => item.onTap(context),
-                              child: Container(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 24, vertical: 8),
-                                child: Text(
-                                  item.title,
-                                  textAlign: TextAlign.start,
-                                  style: GoogleFonts.oswald(),
+                      : Column(
+                          children: [
+                            ListTile(
+                              title: MouseRegion(
+                                cursor: SystemMouseCursors.click,
+                                child: GestureDetector(
+                                  onTap: () => item.onTap(context),
+                                  child: Container(
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 24, vertical: 8),
+                                    child: Text(
+                                      item.title,
+                                      textAlign: TextAlign.start,
+                                      style: GoogleFonts.oswald(),
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
+                            SizedBox(
+                              height: 24,
+                            ),
+                          ],
                         );
                 },
               ).toList(),
@@ -63,6 +70,9 @@ class CustomDrawer extends StatelessWidget {
             Text(
               '© Jan Jan Tech | Karl Jan S. Reginaldo',
               textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 10,
+              ),
             )
           ],
         ),
