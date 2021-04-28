@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:meta/meta.dart';
 import 'package:portfolio/components/custom_rich_text.dart';
 import 'package:portfolio/model/project.dart';
@@ -55,9 +56,10 @@ Future<void> _showMyDialog(BuildContext context) async {
         ),
         actions: <Widget>[
           TextButton(
-            child: CustomRichText(
-              fontSize: 16,
-              title: 'Back',
+            child: FaIcon(
+              FontAwesomeIcons.arrowRight,
+              color: Colors.white,
+              size: 16,
             ),
             onPressed: () {
               Navigator.of(context).pop();

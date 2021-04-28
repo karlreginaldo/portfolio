@@ -19,6 +19,7 @@ class MobileHeader extends StatelessWidget {
         children: [
           Logo(),
           MouseRegion(
+            cursor: SystemMouseCursors.click,
             child: GestureDetector(
               onTap: () => scaffoldKey.currentState.openEndDrawer(),
               child: FaIcon(FontAwesomeIcons.bars),
