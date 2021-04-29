@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../model/skill.dart';
 
@@ -62,13 +63,13 @@ class SkillsRight extends StatelessWidget {
                               flex: 100 - skill.percentage,
                               child: Divider(),
                             ),
-                            // SizedBox(
-                            //   width: 10.0,
-                            // ),
-                            // Text(
-                            //   "${skill.percentage}%",
-                            //   style: GoogleFonts.oswald(fontSize: 16),
-                            // )
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            FaIcon(
+                              skill.iconData,
+                              color: Colors.green,
+                            )
                           ],
                         ),
                       )
@@ -97,11 +98,10 @@ class SkillsRight extends StatelessWidget {
                               flex: 100 - skill.percentage,
                               child: Divider(),
                             ),
-                            // SizedBox(
-                            //   width: 10.0,
-                            // ),
-                            // Text("${skill.percentage}%",
-                            //     style: GoogleFonts.oswald(fontSize: 16))
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            FaIcon(skill.iconData, color: Colors.green)
                           ],
                         ),
                       ),
