@@ -13,7 +13,7 @@ class ProjectWrap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         CustomRichText(
           fontSize: 24,
@@ -25,7 +25,7 @@ class ProjectWrap extends StatelessWidget {
           color: Colors.grey,
           fontWeight: FontWeight.normal,
           title:
-              'These are personal projects I\'ve made during quarantine \nI\'ll make more personal project and update my code on github regularly',
+              'These are personal projects I\'ve made during quarantine. I\'ll make more personal project and update my code on github regularly',
         ),
         SizedBox(
           height: 50,

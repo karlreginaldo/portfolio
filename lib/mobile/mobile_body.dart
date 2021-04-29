@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:portfolio/components/contacts.dart';
+import 'package:portfolio/components/education.dart';
 import '../components/introduction.dart';
 import '../components/project_slider.dart';
 import '../components/resources.dart';
@@ -42,6 +43,14 @@ class _MobileBodyState extends State<MobileBody> {
           ),
           Container(
             child: Resources(),
+          ),
+          SizedBox(
+            height: 100,
+          ),
+          Container(
+            child: Column(
+              children: [EducationLeft(), EducationRight()],
+            ),
           ),
           SizedBox(
             height: 100,

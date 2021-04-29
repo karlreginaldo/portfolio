@@ -29,6 +29,9 @@ final List<Header> headerItem = [
       title: 'RESOURCES',
       onTap: (BuildContext context) => _showMyDialog(context)),
   Header(
+      title: 'EDUCATION',
+      onTap: (BuildContext context) => _showMyDialog(context)),
+  Header(
       title: 'CONTACT', onTap: (String url) => launchURL(url), isSpecial: true),
 ];
 
