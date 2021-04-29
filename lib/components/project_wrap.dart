@@ -25,7 +25,7 @@ class ProjectWrap extends StatelessWidget {
           color: Colors.grey,
           fontWeight: FontWeight.normal,
           title:
-              'This project was my personal projects during quarantine. \nI\'ll make more personal project and update my code in github regularly',
+              'These are personal projects I\'ve made during quarantine \nI\'ll make more personal project and update my code on github regularly',
         ),
         SizedBox(
           height: 50,

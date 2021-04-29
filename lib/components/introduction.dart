@@ -36,7 +36,7 @@ class IntroLeft extends StatelessWidget {
           fontSize: 36,
         ),
         CustomRichText(
-          title: 'I create applications like Mobile, Web and Desktop',
+          title: 'I create applications for Mobile, Web and Desktop',
           fontSize: 16,
           color: Colors.grey,
           fontWeight: FontWeight.normal,
