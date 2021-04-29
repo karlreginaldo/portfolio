@@ -25,7 +25,7 @@ class EducationRight extends StatelessWidget {
           color: Colors.grey,
           fontWeight: FontWeight.normal,
           title:
-              'This is all the skills listed below more will be added in due time. I currently learning python machine learning for competition',
+              'These are the schools I went to before. I just want to add these in my portfolio',
         ),
         SizedBox(
           height: 15.0,
