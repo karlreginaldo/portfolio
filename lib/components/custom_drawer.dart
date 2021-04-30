@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/constant/colors.dart';
+import 'package:portfolio/constant/integers.dart';
+import 'package:portfolio/constant/strings.dart';
 import '../model/header.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -25,12 +28,11 @@ class CustomDrawer extends StatelessWidget {
                           title: MouseRegion(
                             cursor: SystemMouseCursors.click,
                             child: GestureDetector(
-                              onTap: () => item
-                                  .onTap('https://www.facebook.com/mikagura12'),
+                              onTap: () => item.onTap(kDrawerLink),
                               child: Container(
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 24, vertical: 8),
-                                color: Colors.green,
+                                color: kGreen,
                                 child: Text(
                                   item.title,
                                   textAlign: TextAlign.center,
@@ -60,7 +62,7 @@ class CustomDrawer extends StatelessWidget {
                               ),
                             ),
                             SizedBox(
-                              height: 24,
+                              height: k24Size,
                             ),
                           ],
                         );
@@ -68,10 +70,10 @@ class CustomDrawer extends StatelessWidget {
               ).toList(),
             ),
             Text(
-              '© Jan Jan Tech | Karl Jan S. Reginaldo',
+              drawerFooter,
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 10,
+                fontSize: k10Size,
               ),
             )
           ],

@@ -3,6 +3,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/constant/colors.dart';
+import 'package:portfolio/constant/integers.dart';
+import 'package:portfolio/constant/strings.dart';
 import 'custom_rich_text.dart';
 import '../model/project.dart';
 
@@ -17,16 +20,15 @@ class ProjectSlider extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         CustomRichText(
-          fontSize: 24,
-          title: 'Personal Projects',
-          color: Colors.green,
+          fontSize: k24Size,
+          title: kProjTitle,
+          color: kGreen,
         ),
         CustomRichText(
-          fontSize: 16,
-          color: Colors.grey,
+          fontSize: k16Size,
+          color: kGray,
           fontWeight: FontWeight.normal,
-          title:
-              'This project was my personal projects during quarantine. \nI\'ll make more personal project and update my code in github regularly',
+          title: kProjDescription,
         ),
         Expanded(
           child: CarouselSlider(
@@ -41,12 +43,12 @@ class ProjectSlider extends StatelessWidget {
                 .map(
                   (project) => Column(
                     children: [
-                      Text(
-                        project.title,
-                        style: GoogleFonts.oswald(fontSize: 24),
+                      CustomRichText(
+                        fontSize: k24Size,
+                        title: project.title,
                       ),
                       SizedBox(
-                        height: 25,
+                        height: k24Size,
                       ),
                       Expanded(
                         child: ClipRRect(
@@ -57,7 +59,7 @@ class ProjectSlider extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 16,
+                        height: k16Size,
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.min,
@@ -71,16 +73,16 @@ class ProjectSlider extends StatelessWidget {
                               child: Container(
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 24, vertical: 8),
-                                color: Colors.green,
-                                child: Text(
-                                  'Download',
-                                  style: GoogleFonts.oswald(),
+                                color: kGreen,
+                                child: CustomRichText(
+                                  title: 'Download',
+                                  fontWeight: FontWeight.normal,
                                 ),
                               ),
                             ),
                           ),
                           SizedBox(
-                            width: 24,
+                            width: k24Size,
                           ),
                           MouseRegion(
                             cursor: SystemMouseCursors.click,
@@ -89,10 +91,10 @@ class ProjectSlider extends StatelessWidget {
                               child: Container(
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 24, vertical: 8),
-                                color: Colors.black,
-                                child: Text(
-                                  'Github',
-                                  style: GoogleFonts.oswald(),
+                                color: kBlack,
+                                child: CustomRichText(
+                                  fontWeight: FontWeight.normal,
+                                  title: 'Github',
                                 ),
                               ),
                             ),

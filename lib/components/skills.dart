@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/constant/colors.dart';
+import 'package:portfolio/constant/integers.dart';
+import 'package:portfolio/constant/strings.dart';
 import '../model/skill.dart';
 
 import 'custom_rich_text.dart';
@@ -17,22 +19,21 @@ class SkillsRight extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         CustomRichText(
-          title: 'SKILLS',
-          color: Colors.green,
-          fontSize: 24,
+          title: kSkillTitle,
+          color: kGreen,
+          fontSize: k24Size,
         ),
         SizedBox(
-          height: 10.0,
+          height: k10Size,
         ),
         CustomRichText(
-          fontSize: 16,
-          color: Colors.grey,
+          fontSize: k16Size,
+          color: kGray,
           fontWeight: FontWeight.normal,
-          title:
-              'This is all the skills listed below more will be added in due time. I currently learning python machine learning for competition',
+          title: kSkillDescription,
         ),
         SizedBox(
-          height: 15.0,
+          height: k14Size,
         ),
         Column(
           children: skills
@@ -48,15 +49,16 @@ class SkillsRight extends StatelessWidget {
                                 padding: EdgeInsets.only(left: 10.0),
                                 alignment: Alignment.centerLeft,
                                 height: 38.0,
-                                child: Text(
-                                  skill.skill,
-                                  style: GoogleFonts.oswald(fontSize: 16),
+                                child: CustomRichText(
+                                  fontSize: k16Size,
+                                  fontWeight: FontWeight.normal,
+                                  title: skill.skill,
                                 ),
                                 color: Theme.of(context).primaryColor,
                               ),
                             ),
                             SizedBox(
-                              width: 10.0,
+                              width: k10Size,
                             ),
                             Expanded(
                               // remaining (blank part)
@@ -64,11 +66,11 @@ class SkillsRight extends StatelessWidget {
                               child: Divider(),
                             ),
                             SizedBox(
-                              width: 10.0,
+                              width: k10Size,
                             ),
                             FaIcon(
                               skill.iconData,
-                              color: Colors.green,
+                              color: kGreen,
                             )
                           ],
                         ),
@@ -83,15 +85,16 @@ class SkillsRight extends StatelessWidget {
                                 padding: EdgeInsets.only(left: 10.0),
                                 alignment: Alignment.centerLeft,
                                 height: 38.0,
-                                child: Text(
-                                  skill.skill,
-                                  style: GoogleFonts.oswald(fontSize: 16),
+                                child: CustomRichText(
+                                  fontSize: k16Size,
+                                  fontWeight: FontWeight.normal,
+                                  title: skill.skill,
                                 ),
-                                color: Colors.green,
+                                color: kGreen,
                               ),
                             ),
                             SizedBox(
-                              width: 10.0,
+                              width: k10Size,
                             ),
                             Expanded(
                               // remaining (blank part)
@@ -99,9 +102,9 @@ class SkillsRight extends StatelessWidget {
                               child: Divider(),
                             ),
                             SizedBox(
-                              width: 10.0,
+                              width: k10Size,
                             ),
-                            FaIcon(skill.iconData, color: Colors.green)
+                            FaIcon(skill.iconData, color: kGreen)
                           ],
                         ),
                       ),

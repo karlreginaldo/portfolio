@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/constant/colors.dart';
+import 'package:portfolio/constant/integers.dart';
 
 class Logo extends StatelessWidget {
   const Logo({Key key}) : super(key: key);
@@ -19,7 +21,7 @@ class Logo extends StatelessWidget {
         TextSpan(
           text: '.',
           style: GoogleFonts.oswald(
-              color: Colors.green, fontSize: 36, fontWeight: FontWeight.bold),
+              color: kGreen, fontSize: k36Size, fontWeight: FontWeight.bold),
         ),
       ]),
     );

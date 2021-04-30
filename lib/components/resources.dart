@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/constant/colors.dart';
+import 'package:portfolio/constant/integers.dart';
+import 'package:portfolio/constant/strings.dart';
 
 import 'custom_rich_text.dart';
 
@@ -14,19 +16,18 @@ class Resources extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         CustomRichText(
-          fontSize: 24,
-          title: 'Resources',
+          fontSize: k24Size,
+          title: kResTitle,
           color: Colors.green,
         ),
         CustomRichText(
-          fontSize: 16,
-          title:
-              'Thanks to all resources below. It helps me to grow and makes me productive every single day. Thank you!',
-          color: Colors.grey,
+          fontSize: k16Size,
+          title: kResDecription,
+          color: kGray,
           fontWeight: FontWeight.normal,
         ),
         SizedBox(
-          height: 50,
+          height: k50Size,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -39,19 +40,18 @@ class Resources extends StatelessWidget {
                     scale: 5,
                   ),
                   SizedBox(
-                    height: 16,
+                    height: k16Size,
                   ),
-                  Text(
-                    'Reso Coder helps me to create and build clean code with his tutorial clean architecture by uncle bob using flutter!',
-                    overflow: TextOverflow.clip,
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.oswald(color: Colors.grey),
-                  )
+                  CustomRichText(
+                    title: kResSub1,
+                    color: kGray,
+                    fontWeight: FontWeight.normal,
+                  ),
                 ],
               ),
             ),
             SizedBox(
-              width: 16,
+              width: k16Size,
             ),
             Expanded(
               child: Column(
@@ -61,19 +61,18 @@ class Resources extends StatelessWidget {
                     scale: 5,
                   ),
                   SizedBox(
-                    height: 16,
+                    height: k16Size,
                   ),
-                  Text(
-                    'Udemy is one of my best resources. It\'s pain to watch the video without understanding it so I spend my 8 hours time every single day just to learn and experience it!',
-                    overflow: TextOverflow.clip,
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.oswald(color: Colors.grey),
-                  )
+                  CustomRichText(
+                    title: kResSub2,
+                    color: kGray,
+                    fontWeight: FontWeight.normal,
+                  ),
                 ],
               ),
             ),
             SizedBox(
-              width: 16,
+              width: k16Size,
             ),
             Expanded(
               child: Column(
@@ -83,14 +82,13 @@ class Resources extends StatelessWidget {
                     scale: 4,
                   ),
                   SizedBox(
-                    height: 10,
+                    height: k10Size,
                   ),
-                  Text(
-                    'Flutter PH is one my favorite community. There\'s a lot of friendly people and they help you to make your bugs out!',
-                    overflow: TextOverflow.clip,
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.oswald(color: Colors.grey),
-                  )
+                  CustomRichText(
+                    title: kResSub3,
+                    color: kGray,
+                    fontWeight: FontWeight.normal,
+                  ),
                 ],
               ),
             ),

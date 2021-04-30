@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/constant/colors.dart';
+import 'package:portfolio/constant/integers.dart';
+import 'package:portfolio/constant/strings.dart';
 import '../model/project.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -16,19 +18,18 @@ class ProjectWrap extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         CustomRichText(
-          fontSize: 24,
-          title: 'Personal Projects',
-          color: Colors.green,
+          fontSize: k24Size,
+          title: kProjTitle,
+          color: kGreen,
         ),
         CustomRichText(
-          fontSize: 16,
-          color: Colors.grey,
+          fontSize: k16Size,
+          color: kGray,
           fontWeight: FontWeight.normal,
-          title:
-              'These are personal projects I\'ve made during quarantine. I\'ll make more personal project and update my code on github regularly',
+          title: kProjDescription,
         ),
         SizedBox(
-          height: 50,
+          height: k50Size,
         ),
         Wrap(
           alignment: WrapAlignment.center,
@@ -40,12 +41,12 @@ class ProjectWrap extends StatelessWidget {
                       const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                   child: Column(
                     children: [
-                      Text(
-                        project.title,
-                        style: GoogleFonts.oswald(fontSize: 24),
+                      CustomRichText(
+                        title: project.title,
+                        fontSize: k24Size,
                       ),
                       SizedBox(
-                        height: 25,
+                        height: k24Size,
                       ),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8),
@@ -55,7 +56,7 @@ class ProjectWrap extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 16,
+                        height: k16Size,
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.min,
@@ -69,16 +70,16 @@ class ProjectWrap extends StatelessWidget {
                               child: Container(
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 24, vertical: 8),
-                                color: Colors.green,
-                                child: Text(
-                                  'Download',
-                                  style: GoogleFonts.oswald(),
+                                color: kGreen,
+                                child: CustomRichText(
+                                  title: 'Download',
+                                  fontWeight: FontWeight.normal,
                                 ),
                               ),
                             ),
                           ),
                           SizedBox(
-                            width: 24,
+                            width: k24Size,
                           ),
                           MouseRegion(
                             cursor: SystemMouseCursors.click,
@@ -87,10 +88,10 @@ class ProjectWrap extends StatelessWidget {
                               child: Container(
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 24, vertical: 8),
-                                color: Colors.black,
-                                child: Text(
-                                  'Github',
-                                  style: GoogleFonts.oswald(),
+                                color: kBlack,
+                                child: CustomRichText(
+                                  title: 'Github',
+                                  fontWeight: FontWeight.normal,
                                 ),
                               ),
                             ),

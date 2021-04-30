@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/constant/integers.dart';
+import 'package:portfolio/constant/strings.dart';
 import 'custom_rich_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -27,35 +28,34 @@ class IntroLeft extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         CustomRichText(
-          title: 'Introduction',
+          title: kIntroTitle,
           color: Colors.green,
-          fontSize: 24,
+          fontSize: k24Size,
         ),
         CustomRichText(
-          title: 'KARL JAN S. REGINALDO',
-          fontSize: 36,
+          title: kIntroName,
+          fontSize: k36Size,
         ),
         CustomRichText(
-          title: 'I create applications for Mobile, Web and Desktop',
-          fontSize: 16,
+          title: kIntroSub1,
+          fontSize: k16Size,
           color: Colors.grey,
           fontWeight: FontWeight.normal,
         ),
         CustomRichText(
-          title: 'I\'m using Flutter Frameworks and Figma for Wireframes',
-          fontSize: 16,
+          title: kIntroSub2,
+          fontSize: k16Size,
           color: Colors.grey,
           fontWeight: FontWeight.normal,
         ),
         SizedBox(
-          height: 20,
+          height: k20Size,
         ),
         MouseRegion(
           cursor: SystemMouseCursors.click,
           child: GestureDetector(
             onTap: () async {
-              final url =
-                  'https://drive.google.com/file/d/1BcxwaOU6WVc6K2MHXhY0n36_WDQDRdw2/view?usp=sharing';
+              final url = kCVlink;
               if (await canLaunch(url)) {
                 await launch(url);
               } else {
@@ -63,13 +63,11 @@ class IntroLeft extends StatelessWidget {
               }
             },
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-              color: Colors.green,
-              child: Text(
-                'Download CV',
-                style: GoogleFonts.oswald(),
-              ),
-            ),
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                color: Colors.green,
+                child: CustomRichText(
+                  title: 'Download CV',
+                )),
           ),
         )
       ],

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:portfolio/constant/colors.dart';
+import 'package:portfolio/constant/integers.dart';
+import 'package:portfolio/constant/strings.dart';
 import 'package:portfolio/model/contact.dart';
 
 import 'custom_rich_text.dart';
@@ -15,19 +18,18 @@ class Contacts extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         CustomRichText(
-          fontSize: 24,
-          title: 'Contacts',
-          color: Colors.green,
+          fontSize: k24Size,
+          title: kContactsTitle,
+          color: kGreen,
         ),
         CustomRichText(
-          fontSize: 16,
-          title:
-              'You can look me everywhere. The list below is my actives accounts and communications. Find me!',
-          color: Colors.grey,
+          fontSize: k16Size,
+          title: kContactsDescription,
+          color: kGray,
           fontWeight: FontWeight.normal,
         ),
         SizedBox(
-          height: 50,
+          height: k50Size,
         ),
         Wrap(
           direction: Axis.horizontal,
@@ -49,21 +51,20 @@ class Contacts extends StatelessWidget {
                             children: [
                               contact.icon,
                               SizedBox(
-                                width: 16,
+                                width: k16Size,
                               ),
                               CustomRichText(
-                                  title: contact.title, fontSize: 16),
+                                  title: contact.title, fontSize: k16Size),
                             ],
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 24,
+                        height: k24Size,
                       ),
                       CustomRichText(
                         title: contact.description,
-                        fontSize: 14,
-                        color: Colors.grey,
+                        color: kGray,
                         fontWeight: FontWeight.normal,
                       ),
                     ],

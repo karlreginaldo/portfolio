@@ -5,7 +5,7 @@ class CustomRichText extends StatelessWidget {
   const CustomRichText(
       {Key key,
       @required this.title,
-      @required this.fontSize,
+      this.fontSize,
       this.color,
       this.fontWeight})
       : super(key: key);
@@ -20,7 +20,7 @@ class CustomRichText extends StatelessWidget {
         children: [
           TextSpan(
             text: title,
-            style: GoogleFonts.oswald(
+            style: GoogleFonts.quicksand(
                 color: color ?? Colors.white,
                 fontSize: fontSize,
                 fontWeight: fontWeight ?? FontWeight.bold),

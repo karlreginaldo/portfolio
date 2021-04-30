@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/custom_rich_text.dart';
+import 'package:portfolio/constant/colors.dart';
+import 'package:portfolio/constant/integers.dart';
+import 'package:portfolio/constant/strings.dart';
 import 'package:portfolio/model/education.dart';
 
 class EducationRight extends StatelessWidget {
@@ -13,22 +16,21 @@ class EducationRight extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomRichText(
-          title: 'Education',
-          color: Colors.green,
-          fontSize: 24,
+          title: kEducationTitle,
+          color: kGreen,
+          fontSize: k24Size,
         ),
         SizedBox(
-          height: 10.0,
+          height: k10Size,
         ),
         CustomRichText(
-          fontSize: 16,
-          color: Colors.grey,
+          fontSize: k16Size,
+          color: kGreen,
           fontWeight: FontWeight.normal,
-          title:
-              'These are the schools I went before. I just want to add these in my portfolio',
+          title: kEducationDescription,
         ),
         SizedBox(
-          height: 15.0,
+          height: k14Size,
         ),
         Column(
           children: educations
@@ -46,17 +48,17 @@ class EducationRight extends StatelessWidget {
                             children: [
                               CustomRichText(
                                 title: education.category,
-                                fontSize: 16,
+                                fontSize: k16Size,
                                 fontWeight: FontWeight.normal,
                               ),
                               CustomRichText(
                                 title: education.schoolName,
-                                fontSize: 16,
-                                color: Colors.green,
+                                fontSize: k16Size,
+                                color: kGreen,
                               ),
                               CustomRichText(
                                 title: education.date,
-                                fontSize: 14,
+                                fontSize: k14Size,
                                 fontWeight: FontWeight.normal,
                                 color: Colors.grey,
                               ),
@@ -65,7 +67,7 @@ class EducationRight extends StatelessWidget {
                         ),
                         CustomRichText(
                           title: education.schoolAddress,
-                          fontSize: 12,
+                          fontSize: k12Size,
                           fontWeight: FontWeight.normal,
                           color: Colors.white.withOpacity(0.5),
                         ),
