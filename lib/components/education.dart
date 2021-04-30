@@ -25,7 +25,7 @@ class EducationRight extends StatelessWidget {
           color: Colors.grey,
           fontWeight: FontWeight.normal,
           title:
-              'These are the schools I went to before. I just want to add these in my portfolio',
+              'These are the schools I went before. I just want to add these in my portfolio',
         ),
         SizedBox(
           height: 15.0,
