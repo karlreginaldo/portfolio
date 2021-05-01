@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:portfolio/constant/colors.dart';
-import 'package:portfolio/constant/integers.dart';
-import 'package:portfolio/constant/strings.dart';
+import '../constant/colors.dart';
+import '../constant/integers.dart';
+import '../constant/strings.dart';
 import '../model/skill.dart';
 
 import 'custom_rich_text.dart';

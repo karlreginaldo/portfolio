@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:portfolio/components/contacts.dart';
-import 'package:portfolio/components/custom_rich_text.dart';
-import 'package:portfolio/components/education.dart';
-import 'package:portfolio/model/education.dart';
+import '../components/contacts.dart';
+import '../components/education.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../components/introduction.dart';

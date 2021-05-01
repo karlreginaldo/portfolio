@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/contacts.dart';
-import 'package:portfolio/components/education.dart';
+import '../components/contacts.dart';
+import '../components/education.dart';
 import '../components/introduction.dart';
 import '../components/project_wrap.dart';
 import '../components/resources.dart';

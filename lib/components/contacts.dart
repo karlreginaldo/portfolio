@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:portfolio/constant/colors.dart';
-import 'package:portfolio/constant/integers.dart';
-import 'package:portfolio/constant/strings.dart';
-import 'package:portfolio/model/contact.dart';
 
+import '../constant/colors.dart';
+import '../constant/integers.dart';
+import '../constant/strings.dart';
+import '../model/contact.dart';
 import 'custom_rich_text.dart';
 
 class Contacts extends StatelessWidget {

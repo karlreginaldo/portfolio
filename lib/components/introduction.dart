@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:portfolio/constant/integers.dart';
-import 'package:portfolio/constant/strings.dart';
+import '../constant/integers.dart';
+import '../constant/strings.dart';
 import 'custom_rich_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:portfolio/constant/colors.dart';
-import 'package:portfolio/constant/integers.dart';
-import 'package:portfolio/constant/strings.dart';
+import '../constant/colors.dart';
+import '../constant/integers.dart';
+import '../constant/strings.dart';
 import '../model/project.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 

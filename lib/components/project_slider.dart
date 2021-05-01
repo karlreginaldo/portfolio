@@ -2,10 +2,9 @@ import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/constant/colors.dart';
-import 'package:portfolio/constant/integers.dart';
-import 'package:portfolio/constant/strings.dart';
+import '../constant/colors.dart';
+import '../constant/integers.dart';
+import '../constant/strings.dart';
 import 'custom_rich_text.dart';
 import '../model/project.dart';
 

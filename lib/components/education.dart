@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/custom_rich_text.dart';
-import 'package:portfolio/constant/colors.dart';
-import 'package:portfolio/constant/integers.dart';
-import 'package:portfolio/constant/strings.dart';
-import 'package:portfolio/model/education.dart';
+import 'custom_rich_text.dart';
+import '../constant/colors.dart';
+import '../constant/integers.dart';
+import '../constant/strings.dart';
+import '../model/education.dart';
 
 class EducationRight extends StatelessWidget {
   const EducationRight({
