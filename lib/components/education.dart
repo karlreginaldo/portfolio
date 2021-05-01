@@ -25,7 +25,7 @@ class EducationRight extends StatelessWidget {
         ),
         CustomRichText(
           fontSize: k16Size,
-          color: kGreen,
+          color: kGray,
           fontWeight: FontWeight.normal,
           title: kEducationDescription,
         ),

@@ -8,7 +8,7 @@ String kSkillDescription =
 String drawerFooter = '© Jan Jan Tech | Karl Jan S. Reginaldo';
 String kEducationTitle = 'Education';
 String kEducationDescription =
-    'These are the schools I went before. I just want to add these in my portfolio';
+    'These are the schools I went before. I just want to add this in my portfolio';
 String kIntroTitle = 'Introduction';
 String kIntroName = 'KARL JAN S. REGINALDO';
 String kIntroSub1 = 'I create applications for Mobile, Web and Desktop';
